@@ -1,0 +1,828 @@
+/* Empty. Add your own CSS if you like */
+
+.bar-header {
+  border-bottom: 0;
+}
+
+/* css for global setting start */
+.action-sheet {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.action-sheet-group {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+/* css for search page start */
+.search_key {
+    border-width: 0.125rem;
+    padding-left: 0.3125rem;
+}
+.search_key input{
+  color: #D0D2D3;
+  font-family: SST Pro Light;
+  font-size: 1.3125rem;
+}
+.search_key a{
+    padding-right: 0.0625rem;
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.3125rem;
+}
+.prompt{
+    color : #929497;
+    padding-top: 0.0625rem;
+}
+.prompt p{
+    font-family: SST Pro Light;
+    font-size: 1.0625rem;
+    color : #929497;
+    line-height: 0.875rem;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.3125rem;
+}
+.p_one{
+    padding-top: 0.125rem;
+}
+/* css for search page end */
+/* css for global setting end */
+
+h1.splash
+{
+  font-size: 100px;
+  text-align: center;
+}
+a.splash
+{
+  font-size: 20px;
+  text-decoration: none
+}
+div.splash
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92%
+}
+.login{
+    background: #439EDF;
+}
+
+div.login .content{
+
+  position: absolute;
+  top:60px;
+  left:50px;
+}
+div.login
+{
+  top:40px;
+  position:absolute;
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+  align-items: center;
+  font-size: 40px;
+  height: 40%
+}
+#hplus
+{
+    width: 130px;
+    height: 20px;
+    background: dodgerblue;
+    position: absolute;
+    margin-top: 55px;
+}
+#vplus
+{
+  width: 20px;
+  height: 130px;
+  background: dodgerblue;
+  position:absolute;
+  margin-left: 55px;
+}
+
+
+#hplus1
+{
+    top:48px;
+    left:48px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    position: absolute;
+
+}
+
+#hplus2
+{
+    top:48px;
+    left:48px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    position: absolute;
+    margin-left: 32px;
+}
+
+#vplus1
+{
+  top:80px;
+  left:48px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  position:absolute;
+}
+
+#vplus2
+{
+  top:80px;
+  left:48px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  position:absolute;
+  margin-left: 32px;
+}
+
+.login .login .content{
+    height:32px;
+    top:111px;
+    width:100px;
+    position: absolute;
+    background: url('../img/alpha.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.logincontent{
+    width:100px;
+    height:32px;
+    top:152px;
+    position: absolute;
+    left:48px;
+    background: url('../img/alpha.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.login .list.list-inset{
+    display: flex;
+    height: 100%;
+    padding-top: 55%;
+    margin-left:10px;
+    margin-right:10px;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login .list.list-inset .item.item-input{
+    border:2px solid #fff;
+    background: transparent;
+    margin-bottom: 16px;
+}
+.ng-valid.ng-dirty.ng-valid-parse.ng-touched{
+       background: transparent;
+}
+.login .list.list-inset .item.item-input{
+    padding: 0;
+   font-size: 40px;
+   font-family: SST Pro Light;
+   height:50px;
+}
+.item.item-input .text{
+   padding-top:10px;
+   background: transparent;
+   color:#215071;
+   height:50px;
+}
+
+/*         gesture
+.gesture{
+
+  display: flex;
+  height: 100%;
+  padding-top: 30%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top:21%;
+
+}
+  */
+.patt-holder{
+ width:96%;
+}
+
+/* css for detail page begin */
+
+.bar-header {
+    background: none;
+}
+.button-bar .button_reject {
+  background-color: #2A3541;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-left: 0.375rem;
+  font-size: 1.3125rem;
+}
+.button-bar .button_approve {
+  background-color: #439EDF;
+  color: #FFFFFF;
+  font-family: SST Pro Light;
+  padding-right: 0.375rem;
+}
+.button-bar .button {
+    border: 0.25rem solid white;
+    font-size: 1.3125rem;
+}
+
+.button-bar .button:first-child {
+    text-align: left;
+    border-radius: 0;
+    margin-left: -0.125rem;
+}
+
+.button-bar .button:last-child {
+    text-align: right;
+    border-radius: 0;
+}
+.content-detail {
+    margin:0;
+    padding-top: 0rem;
+}
+.content-detail p.main {
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 0.9375rem;
+}
+
+.content-detail p.submain {
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 0.9375rem;
+}
+
+.content-detail p.details {
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 0.9375rem;
+    margin-bottom:0.5625rem;
+    line-height:1.25rem;
+    white-space:pre-line;
+}
+.content-detail p {
+    margin-bottom: 0rem;
+}
+.content-detail hr{
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+.h_info {
+    height: 1.0625rem;
+    font-family: SST Pro Bold;
+    color: #000000;
+    font-size: 1.0625rem;
+    margin-top: 0.75rem;
+}
+.i_info {
+    padding: 0rem;
+}
+.p_info {
+
+    margin-top: 0.125rem;
+    font-family: SST Pro Light;
+    font-size: 1.0625rem;
+    color: #000000;
+}
+.p_info i{
+    font-family: SST Pro Light;
+    font-size: 0.9375rem;
+    color: #C4C4C6;
+}
+.f_name {
+    padding-left: 0.5rem;
+}
+.f_name span {
+    color: #439EDF;
+    font-family: SST Pro Light;
+    font-size: 1.0625rem;
+}
+.item-details .item {
+    border-style: none;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.item-details .item:last-child {
+    padding-bottom: 0.625rem;
+}
+
+.item-attachments .item {
+    color: dodgerblue;
+    border-style: none;
+    background-color:#E5E6E7;
+    margin-top: 0.25rem;
+    text-align: left;
+}
+
+.item-attachments i.ion-document {
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    right: 0.625rem;
+    font-size: 1.3125rem;
+}
+
+.item-records .item {
+    border-style: none;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+/*.item-records .item:last-child {
+    padding-bottom: 12px;
+}*/
+
+.comment {
+    border-color: #439EDF;
+    border-width: 0.25rem;
+    border-style: solid;
+    font-size: 0.875rem;
+    padding: 0.625rem 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-normal {
+    color: #808184;
+    font-size: 1.3125rem;
+    font-family: SST Pro Light;
+}
+
+.comment-required {
+    color: #EC1C24;
+    font-size: 1.3125rem;
+    font-family: SST Pro Light;
+}
+
+.actionsheet-approvement .action-sheet-group {
+
+    padding-top: 0.75rem;
+    padding-right: 2.375rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2.375rem;
+    display: flex;
+    flex-flow: row wrap;
+    height: 10rem;
+}
+
+.actionsheet-approvement .action-sheet-group .button {
+    padding: 0 0.625rem 0.625rem 0.625rem;
+    width: 50%;
+    border: 0.125rem solid #f1f2f3;
+    font-size: 1.125rem;
+    font-weight: 25rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.actionsheet-approvement .action-sheet-title {
+    padding-top: 0.625rem !important;
+    padding-bottom: 2rem !important;
+    padding-left: 1.5rem !important;
+    width: 100%;
+    text-align: left;
+    margin-top: -0.375rem;
+    font-size: 1.0625rem;
+    color: #808184;
+    font-family: SST Pro Light;
+}
+
+.actionsheet-approvement .action-sheet-group .button:nth-child(2) {
+    background-color: #444;
+    color: #fff;
+    text-align: left;
+}
+.actionsheet-approvement .action-sheet-group .button:nth-child(3) {
+    background-color: #11c1f3;
+    color: #fff;
+    text-align: right;
+}
+
+.actionsheet-success .action-sheet-title {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    width: 100%;
+    height: 5.875rem;
+    text-align: left;
+    font-size: 1.0625rem;
+    color: #808184;
+    font-family: SST Pro Light;
+}
+.attachment_hr {
+    padding-top: 0.3125rem;
+}
+#comment-inform{
+    margin-top:0.5rem;
+}
+#comment-inform .scroll {
+    height: 100%;
+}
+
+#comment-inform textarea {
+    width: 100%;
+    min-height: 9.375rem;
+    max-height: 9.375rem;
+	  border: solid 0.125rem dodgerblue;
+    padding-top: 0.9375rem;
+    padding-left: 0.625rem;
+    color: #808184;
+    font-family: SST Pro Light;
+    font-size: 1.3125rem;
+}
+#top {
+    margin-top: 11.25rem;
+    text-align: center;
+}
+/* css for detail page end*/
+
+/* css for fileviewer page start */
+
+.attachment-image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.attachment-image-transparent {
+  background: rgba(0,0,0,0.7);
+}
+
+.attachment-image {
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+.attachment-txt {
+    width: 100%;
+    height: 600px;
+    white-space: pre;
+}
+/*
+.attachment-pdf-controls {
+    width: 100%;
+    display: block;
+    background: #eee;
+    padding: 1em;
+}
+
+.attachment-pdf-fixed {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 480px);
+    z-index: 100;
+    width: 100%;
+    padding: 1em;
+    background: rgba(238, 238, 238,.9);
+    width: 960px;
+}
+*/
+/* css for fileviewer page end */
+
+/* css for home page start*/
+
+.actionsheet-home .action-sheet-wrapper {
+    height: 100%;
+    background: #439EDF;
+    top:7.5rem;
+}
+
+.actionsheet-home .action-sheet-group {
+    padding: 0.75rem;
+    background: #439EDF;
+}
+
+.actionsheet-home .action-sheet .button{
+  min-height: 1.5625rem;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+}
+
+.actionsheet-home .action-sheet .button span{
+  float:right;
+  color:#FDF003
+}
+
+.content-home .des{
+  max-height: 3.75rem;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.bar-subheader.myblue .title{
+  color: #fff;
+}
+
+.menucontent .close{
+  background: url('../img/close.jpg');
+  display: inline-block;
+  width:2.8125rem;
+  height:2.8125rem;
+  float:right;
+  margin-right: 1.5625rem;
+}
+.gesture{
+    margin-top:17%;
+}
+
+/* css for home page end*/
+.gesture-lock .gesture {
+  display: flex;
+  height: 100%;
+  padding-top: 30%;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+ .actionsheet-gesture .action-sheet-title {
+        font-size: 18px;
+        padding-bottom: 150px !important;
+        width: 100%;
+        color:#8A8589;
+        text-align:left;
+    }
+
+ .gesture-lock{
+     background-color:#439EDF
+ }
+
+ .gesture-lock .red{
+         color:#C50E0E;
+   }
+  .gesture-lock .write{
+         color:#FAFAFA;
+   }
+  .gesture-lock .bar-footer{
+    background: none;
+     color:#FAFAFA;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+  /*
+    demo-icon{
+    margin: 0px 0.5rem 0px 0px;
+}
+.bar .subtitle .demo-icon{
+    position: absolute;
+    margin-left: 0.875rem;
+}
+
+.ion-search{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.ion-search.active{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 14px;
+    margin-top: 16px;
+    background: #f00;
+    color:#f00;
+}
+
+.ion-search.active{
+    width:2rem;
+    height:2rem;
+    margin-right:6px;
+    background: #fff;
+}
+
+*/
+
+
+
+
+.bar-header{
+  height:3.875rem;
+  line-height:3.875rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.platform-android .bar .title{
+    height:3.875rem;
+    line-height: 3.875rem;
+    display: block;
+}
+.bar .title{
+    position: relative;
+    bottom: 0;
+    line-height: 60px;
+    height:60px;
+}
+
+.bar .title .lefttitle{
+  height:60px;
+  line-height: 60px;
+  margin-left:12px;
+  padding-top:8px;
+  display: inline-block;
+}
+
+.bar .title .blue{
+    margin-right: 0.5rem;
+    color:#439EDF;
+    padding-top: 32px;
+}
+.bar .title .demo-icon{
+    color: #439edf;
+}
+
+.has-subheader {
+  top: 7rem;
+
+}
+
+.bar-subheader{
+    height:3.125rem;
+    top:3.875rem;
+     padding:0;
+  margin: 0;
+}
+
+.bar .subtitle{
+    bottom: 0;
+    margin-left:0.875rem;
+    margin-right:12px;
+    background: #439EDF;
+    height:3.125rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 1.875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color:#fff;
+    height:50px;
+    line-height: 50px;
+}
+
+.bar .text{
+    padding-left:8px;
+}
+
+.bar .subtext{
+    padding-left:8px;
+    color:#fff;
+}
+
+.bar .subtitle .subheaderright{
+     float:right;
+     color:#fff100;
+     display: inline-block;
+     margin-right: 8px;
+     padding-top:3px;
+}
+
+
+ .button.button-royal {
+    border-color: transparent;
+      color: #000;
+       width: 2rem;
+    height: 2rem;
+  }
+    .button.button-royal.active,
+     .button.button-royal.activated {
+           background: #FFD6D6;
+            color: #000;
+             width: 2rem;
+    height: 2rem;
+     }
+
+.ion-search{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.ion-search.active{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 14px;
+    margin-top: 16px;
+}
+
+.ion-search.active{
+    width:2rem;
+    height:2rem;
+    margin-right:6px;
+}
+
+.ion-android-close{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.ion-android-close.active{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 14px;
+    margin-top: 16px;
+}
+
+.ion-android-close.active{
+    width:2rem;
+    height:2rem;
+    margin-right:6px;
+}
+
+
+
+.content-home ul{
+    margin-top:0.5rem;
+}
+
+.content-home li{
+    padding-top: 0.875rem;
+    padding-left: 0.5rem;
+    margin-bottom:  0.4375rem;
+    border-bottom:1px solid #929497;
+}
+.content-home li p{
+    margin: 0;
+    padding: 0
+}
+
+.content-home li p.main{
+    color:#000000;
+    font-family: 冬青黑w6;
+    font-size: 0.9375rem;
+
+}
+.content-home li p.submain{
+    color:#000000;
+    font-family: 冬青黑w3;
+    font-size: 0.9375rem;
+}
+
+.content-home li p.details{
+    color:#929497;
+    font-family: 冬青黑w3;
+    font-size: 0.9375rem;
+    margin-bottom:0.5625rem;
+    line-height:1.25rem;
+    white-space:pre-line;
+    max-height:2.5em
+}
+.content-home li p span.right{
+  float:right;
+   color:#929497;
+    font-family: sst Pro Light;
+    font-size: 0.9375rem;
+   padding-right: 0.5rem;
+}
+.content-home .item{
+    border-color: transition;
+    border-style: none;
+    border-width:1px;
+    padding: 0px;
+    margin: 0 0.875rem;
+}
+
+  @media screen and (max-width: 1080px) {
+        .content-home li{
+            border-bottom:2px solid #929497;
+        }
+  }
+
+   @media screen and (max-width: 720px) {
+    .content-home li{
+            border-bottom:1px solid #929497;
+        }
+  }
