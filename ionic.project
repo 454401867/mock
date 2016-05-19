@@ -1,0 +1,10 @@
+{
+  "name": "wisdom",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://43.82.163.41:9010"
+    }
+  ]
+}
