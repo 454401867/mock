@@ -1,0 +1,30 @@
+<ion-view class="gesture-lock" view-title="Login"  name="login-view" ng-controller="LockController">
+
+    <ion-header-bar align-title="left">
+        <h1 class="title">Set Unlock Gesture</h1>
+    </ion-header-bar
+    <ion-content scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+        <div id="hplus1"></div>
+        <div id="hplus2"></div>
+        <div id="vplus1"></div>
+        <div id="vplus2"></div>
+        
+       <div class="logincontent" >
+           <div  height="32px"></div>
+       </div>
+     
+        <div class="gesture" >
+            <div>
+                <!-- <h4 id="title">Please create a new gesture.</h4>-->
+                <h4 id="title" class="{{gesture.css}}">{{gesture.title}}</h4>
+            </div>
+            <div id="lockPattern" class="pattern-holder patt-holder"></div>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar align-title="left">
+        &nbsp &nbsp <a id="res" ng-click="Reset()"><i> RESET GESTURE </i> </a>
+    </ion-footer-bar>
+
+</ion-view>

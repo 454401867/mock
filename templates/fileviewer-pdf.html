@@ -1,0 +1,12 @@
+<nav ng-class="getNavStyle(scroll)">
+  <button ng-click="goPrevious()"><span>Pre</span></button>
+  <button ng-click="goNext()"><span>Next</span></button>
+  Page:<input type="text" min=1 ng-model="pageNum" style="display: inline; width:30px; text-align:center; vertical-align: baseline;">
+  <span> / {{pageCount}}</span>
+</nav>
+<hr>
+
+<ion-scroll direction="xy" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false"
+  zooming="true" min-zoom="{{zoomMin}}" style="width: 100%; height: 100%">
+  <canvas id="pdf"></canvas>
+</ion-scroll>

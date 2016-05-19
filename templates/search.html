@@ -1,0 +1,23 @@
+<ion-view view-title="Search" ng-controller="SearchController">
+  <ion-header-bar align-title="left">
+     <h1 class="title"><span class="lefttitle">Search</span></h1>
+    <button class="button button-icon icon ion-android-close" ng-click="goBack()" nav-transition="none"></button>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <div class="row item item-input calm-border search_key">
+        <input id="search" type="search" placeholder="Keyword" ng-keydown="keydown($event)"
+          ng-focus="hide()" ng-blur="show()" ng-keyup="clearShowOrHide($event)" nav-transition="none"
+          ng-model="search.searchValue">
+        <a id="clear" ng-click="clear()">Clear</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col padding item-note prompt">
+        <p class="p_one">Searchable Area Includes:</p>
+        <p>Employee name; GID; Application</p>
+        <p>Number; Description.</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<ion-view view-title="Wise ToApprove" cache-view="true">
+    <ion-header-bar align-title="left">
+        <div class="title icon-reorder_square">
+            <i class="demo-icon icon-th-large blue" menu-toggle="left">&#xe800;</i>
+            <span class="blue">WISE<span>&nbsp;&nbsp;<span style="color:#000">ToApprove</span>
+        </div>
+            <button class="button button-icon icon ion-search button-royal" ng-click="goSearch()" nav-direction="enter"></button>
+    </ion-header-bar>
+
+    <ion-header-bar class="bar-subheader" ng-click="showActionsheet()" align-title="left">
+        <div class="subtitle"><span class="text">All Applications<span>
+            <span class="subheaderright">12</span></div>
+    </ion-header-bar>
+
+    <style>
+        .platform-android .action-sheet .button.activated {
+            background: #439EDF;
+            color: #fff;
+        }
+    </style>
+    <ion-content class="content-home">
+        <ion-refresher pulling-icon="" refreshing-icon="ios-small" on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ul>
+                <ion-item ng-repeat="item in items" class="item-remove-animate">
+                    <li ng-click="forward({{item.id}})">
+                        <p class="main"> {{item.applier}}<span class="right">{{item.applydate}}</span></p>
+                        <p class="submain">{{item.applytype}}</p>
+                        <p class="details" style="">{{item.description}}</p>
+                    </li>
+
+                </ion-item>
+            </ul>
+        </ion-list>
+        <!--上拉更多 ng-if="moreDataCanBeLoaded()"-->
+        <ion-infinite-scroll ng-if="hasMore" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+        <!--cotent end-->
+    </ion-content>
+
+</ion-view>

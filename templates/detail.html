@@ -1,0 +1,114 @@
+<ion-view view-title="Detail" ng-model="item">
+  <ion-header-bar align-title="left">
+    <h1 class="title"><span class="lefttitle">Details</span></h1>
+    <button class="button button-icon icon ion-android-close" ng-click="goBack()" nav-transition="forward"></button>
+  </ion-header-bar>
+  <ion-header-bar class="bar-subheader">
+    <div class="button-bar">
+      <a class="button button-dark button_reject" ng-click="reject()">REJECT</a>
+      <a class="button button-calm button_approve" ng-click="accept()">APPROVE</a>
+    </div>
+  </ion-header-bar>
+  <ion-content class="has-subheader padding content-detail">
+    <div id="top">
+        <ion-spinner icon='{{ions}}'></ion-spinner>
+    </div>
+    <div id="centent">
+    <p style="color:#666; float:right; width:8.125rem">{{item.applydate}}</p>
+    <p class="main"> {{item.applier}}</p>
+    <p class="submain">{{item.applytype}}</p>
+    <p class="details">{{item.description}}</p>
+    <hr />
+    <p class="h_info">Applicant Info</p>
+    <ion-list class="item-records">
+      <ion-item class="i_info">
+        <P class="p_info">Applicant(ID)  :  <i>{{item.applicant}}</i></P>
+        <P class="p_info">Applicant(Name)  :  <i>{{item.applier}}</i></P>
+        <P class="p_info">Organization  :  <i>{{item.organization}}</i></P>
+        <P class="p_info">Submit Date  :  <i>{{item.applytype}}</i></P>
+      </ion-item>
+    </ion-list>
+    <hr />
+    <p class="h_info">Basic Infomation</p>
+    <ion-list class="item-records ">
+      <ion-item class="i_info">
+        <p class="p_info">Apply Type  :  <i>For Employee</i></p>
+        <p class="p_info">Cost Cneter  :  <i>11125-FCG-Corporate</i></p>
+        <p class="p_info">Company  :  <i>E001-索尼(中国)有限公司上海分公司</i></p>
+        <p class="p_info">Departure  :  <i>WW</i></p>
+        <p class="p_info">Destination  :  <i>EW</i></p>
+        <p class="p_info">Start Date  :  <i>2015/03/10</i></p>
+        <p class="p_info">Return Date  :  <i>2015/04/15</i></p>
+        <p class="p_info">Advance Payment  :  <i>No Advance Payment</i></p>
+        <p class="p_info">Air Ticket Application ID  :  <i></i></p>
+        <p class="p_info">Description  :  <i>sdfsdfsdfsdfsdfsdfsdfdsf</i></p>
+      </ion-item>
+    </ion-list>
+    <hr />
+    <p class="h_info">Expense Detail</p>
+    <ion-list class="item-records ">
+      <ion-item class="i_info">
+        <p class="p_info">Exp.Activity Date  :  <i>2016/02/28</i></p>
+        <p class="p_info">Expense Type  :  <i>51212511 Traveling-Lodging</i></p>
+        <p class="p_info">Applied Amount  :  <i>100.00/CNY</i></p>
+        <p class="p_info">Exchange Rate  :  <i>1.00000</i></p>
+        <p class="p_info">Applied Amount  :  <i>100.00</i></p>
+        <p class="p_info">Detail Description  :  <i>WWWW</i></p>
+      </ion-item>
+    </ion-list>
+    <hr />
+    <p class="h_info">Allowance Detail</p>
+    <ion-list class="item-records ">
+      <ion-item class="i_info">
+        <p class="p_info">Biz Trip Region  :  <i>Domestic</i></p>
+        <p class="p_info">Start Date  :  <i>2016/03/16</i></p>
+        <p class="p_info">End Date  :  <i>2016/03/17</i></p>
+        <p class="p_info">Days  :  <i>2</i></p>
+        <p class="p_info">Allowance/Currency  :  <i>350.00/CNY</i></p>
+        <p class="p_info">Exchange Rate  :  <i>1.0000</i></p>
+        <p class="p_info">Applied Amount  :  <i>700.00</i></p>
+        <p class="p_info">Detail Description  :  <i>详细描述*</i></p>
+      </ion-item>
+    </ion-list>
+    <hr />
+    <p class="h_info">Total Amount</p>
+    <ion-list class="item-records ">
+      <ion-item class="i_info">
+        <p class="p_info">Allowance Revise Amount  :  <i>0.00</i></p>
+        <p class="p_info">Applied Amount  :  <i>800.00</i></p>
+        <p class="p_info">Allowance Revise Reason  :  <i></i></p>
+      </ion-item>
+    </ion-list>
+    <ion-list class="item-attachments">
+      <ion-item ng-repeat="attachment in item.attachments" ng-click="openDocument(attachment)"  class="f_name">
+        <span>{{attachment.fileName}}</span> <i class="icon ion-document"></i>
+      </ion-item>
+    </ion-list>
+    <div class="attachment_hr">
+      <hr />
+    </div>
+    <p class="h_info">Approve Records</p>
+    <ion-list class="item-records ">
+      <ion-item ng-repeat="record in item.records" class="i_info">
+        <P class="p_info">Approver  :  <i>{{record.approver}}</i></P>
+        <P class="p_info">ApproverID  :  <i>{{record.approverID}}</i></P>
+        <p class="p_info">Status  :  <i>{{record.status}}</i></p>
+        <p class="p_info">Date  :  <i>{{record.updDate}}</i></p>
+        <p class="p_info">Comment  :  <i>{{record.comment}}</i></p>
+
+      </ion-item>
+    </ion-list>
+    <div class="comment" ng-click="editComment()" nav-direction="forward">
+      <div class="comment-normal" ng-show="item.comment.content=='' && item.comment.isValid">
+        This attachment is way too big.<br/>
+        Please be noted next time.
+      </div>
+      <div class="comment-normal" ng-trim="true" ng-show="item.comment.content!='' && item.comment.isValid" ng-model="item.comment.content">{{item.comment.content}}</div>
+      <div class="comment-required" ng-show="item.comment.content=='' && !item.comment.isValid">
+        Comment is mandatory when<br/>
+        REJECT
+      </div>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>

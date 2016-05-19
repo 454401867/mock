@@ -1,0 +1,21 @@
+<ion-view view-title="Login">
+    <ion-content ng-controller="LoginController" class="login" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+        <div id="hplus1"></div>
+        <div id="hplus2"></div>
+        <div id="vplus1"></div>
+        <div id="vplus2"></div>
+
+
+        <div class="login">
+            <div class="content"> </div>
+        </div>
+        <div class="list list-inset">
+            <button class="item item-input button button-full">
+                <input type="text" placeholder="Gid" ng-model="data.gid">
+            </button>
+            <button class="item item-input button button-full">
+                <input type="password" placeholder="Password" ng-model="data.password">
+            </button>
+            <button class="button button-dark button-full" ng-click="login()">Login</button>
+        </div </ion-content>
+</ion-view>
